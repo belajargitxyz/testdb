@@ -3,6 +3,7 @@ package alfianyusufabdullah.ezqlite.configuration;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 import java.util.List;
@@ -25,8 +26,7 @@ public class DatabaseConfiguration {
 
 
     public DatabaseConfiguration(Context context) {
-        String PREF_NAME = "ezqlite_database_configuration";
-        preferences = context.getApplicationContext().getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        preferences = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
     public String getDatabaseName() {

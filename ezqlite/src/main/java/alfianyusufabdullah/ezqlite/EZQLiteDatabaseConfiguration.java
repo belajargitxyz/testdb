@@ -1,14 +1,11 @@
 package alfianyusufabdullah.ezqlite;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import alfianyusufabdullah.ezqlite.configuration.DatabaseConfiguration;
-import alfianyusufabdullah.ezqlite.configuration.DatabaseHelperConfiguration;
 import alfianyusufabdullah.ezqlite.configuration.TableConfiguration;
 
 /**
